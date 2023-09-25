@@ -1,0 +1,49 @@
+.Foce {
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #2d87a0;
+}
+
+.waveF {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+    position: relative;
+    width: 6400px;
+    bottom: -198px;
+    left: 0;
+    height: 198px;
+    transform: translate(0, 0, 0);
+    animation: waveF 7s ease infinite;
+}
+
+.waveF:nth-of-type(2) {
+    bottom: 0;
+    animation: swellF 4s ease infinite;
+    opacity: 1;
+
+}
+
+@keyframes waveF {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@keyframes swellF {
+
+    0%,
+    100% {
+        transform: translate(0, px);
+    }
+
+    50% {
+
+        transform: translate(0, 5px);
+    }
+}
