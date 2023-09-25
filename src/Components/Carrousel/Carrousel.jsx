@@ -50,7 +50,7 @@ const Carrousel = () => {
 
     return (
         <>
-            <div className="mx-auto w-9/12 h-80 relative group mt-36 z-0 shadow-md shadow-[#67c6e0] rounded-xl" id="inicio">
+            <div className="mx-auto w-9/12 h-80 relative group z-0 shadow-md shadow-[#67c6e0] rounded-xl" id="inicio">
                 {allImagesLoaded && (
                     <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className="w-full h-full bg-center bg-cover duration-500 rounded-xl"></div>
                 )}

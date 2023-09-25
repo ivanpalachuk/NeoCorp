@@ -46,26 +46,25 @@ const Navbar = () => {
     return (
         <>
 
-            <div className="ocean z-10">
-                <div className="wave"></div>
-                <div className="wave wave2"></div>
-            </div>
-
             <div className="bg-[#266f83] w-full">
-                <nav className="relative px-4 py-4 flex items-center top-34 h-36 mx-auto z-99 navbar bg-[#266f83]">
-                    <a className="text-3xl font-bold leading-none flex items-center absolute top-6 left-8" href="#">
-                        <img
-                            src="/images/logo-web-250x250x_c_10128_1643966292.png"
-                            alt="corporateLogo"
-                            className="h-36"
-                        />
+                <nav className="relative px-4 py-4 flex items-center top-34 h-36 mx-auto bg-[#266f83]">
+
+                    <div className="leading-none flex justify-between align center p-4 m-4 h-full">
+                        <a href="#">
+                            <img
+                                src="/images/logo-web-250x250x_c_10128_1643966292.png"
+                                alt="corporateLogo"
+                                className="h-32 bottom-4 relative"
+                            />
+                        </a>
                         <div className="ml-4 text-right">
                             <span className="text-2xl font-semibold block text-white font-[">NEOCORP S.A.</span>
                             <span className="text-lg text-white">INSUMOS PARA LA SALUD</span>
                         </div>
-                    </a>
+                    </div>
+
                     <div className="lg:hidden">
-                        <button className="navbar-burger flex items-center text-blue-600 p-3">
+                        <button className="navbar-burger flex items-center text-white p-3">
                             <svg className="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <title>Mobile menu</title>
                                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
@@ -135,6 +134,12 @@ const Navbar = () => {
                             </ul>
                         </div>
                     </nav>
+                </div>
+            </div>
+            <div className="wave-container">
+                <div className="ocean">
+                    <div className="wave"></div>
+                    <div className="wave wave2"></div>
                 </div>
             </div>
         </>

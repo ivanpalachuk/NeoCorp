@@ -1,8 +1,3 @@
-.navbar{
-    z-index: 99;
-}
-
-
 .ocean {
     height: 10%;
     width: 100%;
@@ -13,19 +8,29 @@
     transform: scaleY(-1);
 }
 
+.wave-container {
+    width: 100%;
+    /* Establece el ancho deseado para el contenedor */
+    overflow: hidden;
+    position: relative;
+    /* Oculta cualquier parte del elemento .wave que se extienda más allá del ancho del contenedor */
+    height: 198px;
+}
+
 .wave {
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
     position: absolute;
     width: 6400px;
-    top: -198px;
+    top: -120px;
     left: 0;
     height: 198px;
     transform: translate(0, 0, 0);
     animation: wave 7s ease infinite;
+
 }
 
 .wave:nth-of-type(2) {
-    top: -198px;
+    top: -140px;
     animation: swell 4s ease infinite;
     opacity: 1;
     transform: scaleY(-1);

@@ -11,9 +11,11 @@ const Footer = () => {
 
     return (
         <>
-            <div className="fOce">
-                <div className="waveF"></div>
-                <div className="waveF wave2F"></div>
+            <div className="wavef-container">
+                <div className="fOce">
+                    <div className="waveF"></div>
+                    <div className="waveF wave2F"></div>
+                </div>
             </div>
 
             < footer className="bg-[#266f83] font-custom1 static bottom-0 xl:text-xl z-1" >
