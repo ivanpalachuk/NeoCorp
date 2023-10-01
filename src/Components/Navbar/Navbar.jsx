@@ -45,6 +45,14 @@ const Navbar = () => {
         }
     }, []);
 
+    useEffect(() => {
+        // Scroll a la sección "Sobre Nosotros" después de cargar la página
+        const aboutUsSection = document.getElementById('aboutUs');
+        if (aboutUsSection) {
+            aboutUsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, []);
+
     return (
         <>
 
@@ -72,7 +80,7 @@ const Navbar = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
                             </svg>
                         </li>
-                        <li><Link className="text-lg text-gray-400 hover:text-gray-500" to="/#aboutUs" href="aboutUs">Sobre Nosotros</Link></li>
+                        <li><Link className="text-lg text-gray-400 hover:text-gray-500" to="/#aboutUs">Sobre Nosotros</Link></li>
                         <li className="text-gray-300">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" className="w-4 h-4 current-fill" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
@@ -124,7 +132,7 @@ const Navbar = () => {
                                     <Link className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" to="/">Sobre Nosotros</Link>
                                 </li>
                                 <li className="mb-1">
-                                    <Link className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/services">Servicios</Link>
+                                    <Link className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" to="/services">Servicios</Link>
                                 </li>
                                 <li className="mb-1">
                                     <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Cotizaciones</a>

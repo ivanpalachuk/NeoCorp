@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import ProductsView from "./Components/ProductsView/ProductsView";
 import ServicesView from "./Components/ServicesView/ServicesView";
+import AboutUs from "./Components/AboutUs/AboutUs";
 
 
 function App() {
