@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from '../StyledComponents/Title.Jsx'
+import Title from '../StyledComponents/Title.jsx'
 
 const ServicesView = () => {
     return (
