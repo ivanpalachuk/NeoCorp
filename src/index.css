@@ -12,3 +12,33 @@ body {
 body {
     background: radial-gradient(rgba(255, 254, 234, 1) 0%, rgba(255, 254, 234, 1) 35%, #B7E8EB 100%);
 }
+
+
+@font-face {
+    font-family: 'bankGothic';
+    src: url("/fonts/bankgothic-regular.ttf") format("opentype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'N';
+    src: url("/fonts/Neufreit-Light.ttf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neufreit-Regular';
+    src: url("/fonts/Neufreit-Regular.ttf") format("opentype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neufreit-Medium';
+    src: url("/fonts/Neufreit-Medium.ttf") format("opentype");
+    font-weight: 100;
+    font-style: normal;
+}

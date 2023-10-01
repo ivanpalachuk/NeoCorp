@@ -50,7 +50,7 @@ const Carrousel = () => {
 
     return (
         <>
-            <div className="mx-auto w-9/12 h-80 relative group z-0 shadow-md shadow-[#67c6e0] rounded-xl" id="inicio">
+            <div className="mx-auto w-screen bottom-[198px] h-screen relative group z-0 shadow-md shadow-[#67c6e0] rounded-xl" id="inicio">
                 {allImagesLoaded && (
                     <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className="w-full h-full bg-center bg-cover duration-500 rounded-xl"></div>
                 )}
@@ -69,7 +69,7 @@ const Carrousel = () => {
                 <div className="absolute top-[50%] transform -translate-y-1/2 right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
                     <BsChevronCompactRight size={30} onClick={nextSlide} />
                 </div>
-                <div className="absolute top-[50%] transform -translate-y-1/2 flex justify-center items-center inset-0 w-1/2 uppercase  text-4xl  mx-auto  rounded-full p-2 bg-black/20 text-white cursor-pointer">
+                <div className="absolute top-[50%] font-[bankGothic] transform -translate-y-1/2 flex justify-center items-center  text-center inset-0 w-3/4 uppercase text-4xl mx-auto rounded-3xl p-2 bg-[#266f83]/60 text-white cursor-pointer h-1/6">
                     {currentText}
                 </div>
             </div>

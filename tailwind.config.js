@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        custom1: ['bankGhotic', "sans-serif"]
+      }
+},
   },
   plugins: [],
 }

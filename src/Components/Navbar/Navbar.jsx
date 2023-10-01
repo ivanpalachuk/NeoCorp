@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import "./Navbar.css"
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
 
@@ -47,19 +48,19 @@ const Navbar = () => {
         <>
 
             <div className="bg-[#266f83] w-full">
-                <nav className="relative px-4 py-4 flex items-center top-34 h-36 mx-auto bg-[#266f83]">
+                <nav className="relative px-4 py-4 flex items-center justify-between top-34 h-36 mx-auto bg-[#266f83]">
 
-                    <div className="leading-none flex justify-between align center p-4 m-4 h-full">
-                        <a href="#">
+                    <div className="flex align center p-4 m-2 h-full">
+                        <a href="/">
                             <img
                                 src="/images/logo-web-250x250x_c_10128_1643966292.png"
                                 alt="corporateLogo"
-                                className="h-32 bottom-4 relative"
+                                className="h-24 bottom-4 relative min-w-fit mr-4"
                             />
                         </a>
-                        <div className="ml-4 text-right">
-                            <span className="text-2xl font-semibold block text-white font-[">NEOCORP S.A.</span>
-                            <span className="text-lg text-white">INSUMOS PARA LA SALUD</span>
+                        <div className="md:ml-12 xl:ml-2">
+                            <span className="text-2xl font-semibold block text-white font-[bankGothic] lg:text-sm xl:text-3xl"><span className="text-slate-300">NEO</span>CORP S.A.</span>
+                            <span className="text-lg text-white font-[bankGothic] lg:text-sm">INSUMOS PARA LA SALUD</span>
                         </div>
                     </div>
 
@@ -71,34 +72,48 @@ const Navbar = () => {
                             </svg>
                         </button>
                     </div>
-                    <ul className="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2  lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-                        <li><a className="text-xl text-gray-400 hover:text-gray-500" href="#">Home</a></li>
+                    <ul className="hidden transform relative lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-3">
+                        <li><Link className="text-lg text-gray-400 hover:text-gray-500" to="/">Home</Link></li>
                         <li className="text-gray-300">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" className="w-4 h-4 current-fill" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
                             </svg>
                         </li>
-                        <li><a className="text-xl text-gray-400 hover:text-gray-500" href="#">Sobre Nosotros</a></li>
+                        <li><Link className="text-lg text-gray-400 hover:text-gray-500" to="/products">Productos</Link></li>
                         <li className="text-gray-300">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" className="w-4 h-4 current-fill" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
                             </svg>
                         </li>
-                        <li><a className="text-xl text-gray-400 hover:text-gray-500" href="#">Servicios</a></li>
+                        <li><Link className="text-lg text-gray-400 hover:text-gray-500" to="/#aboutUs" href="aboutUs">Sobre Nosotros</Link></li>
                         <li className="text-gray-300">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" className="w-4 h-4 current-fill" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
                             </svg>
                         </li>
-                        <li><a className="text-xl text-gray-400 hover:text-gray-500" href="#">Cotizaciones</a></li>
+                        <li><Link className="text-lg text-gray-400 hover:text-gray-500" to="/services">Servicios</Link></li>
                         <li className="text-gray-300">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" className="w-4 h-4 current-fill" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
                             </svg>
                         </li>
-                        <li><a className="text-xl text-gray-400 hover:text-gray-500" href="#">Contacto</a></li>
+                        <li><a className="text-lg text-gray-400 hover:text-gray-500" href="#">Cotizaciones</a></li>
+                        <li className="text-gray-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" className="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                            </svg>
+                        </li>
+                        <li><a className="text-lg text-gray-400 hover:text-gray-500" href="#">Novedades</a></li>
+                        <li className="text-gray-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" className="w-4 h-4 current-fill" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                            </svg>
+                        </li>
+                        <li><a className="text-lg text-gray-400 hover:text-gray-500" href="#">Contacto</a></li>
                     </ul>
                 </nav>
+
+                {/*Menu del burger*/}
                 <div className="navbar-menu relative z-50 hidden">
                     <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
                     <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">

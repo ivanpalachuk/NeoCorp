@@ -1,9 +1,11 @@
 import Carrousel from "./Components/Carrousel/Carrousel"
 import Footer from "./Components/Footer/Footer"
 import Navbar from "./Components/Navbar/Navbar"
-import Separator from "./Components/Separator/Separator"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import ProductsView from "./Components/ProductsView/ProductsView";
+import ServicesView from "./Components/ServicesView/ServicesView";
+import AboutUs from "./Components/AboutUs/AboutUs";
 
 function App() {
 
@@ -11,11 +13,20 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar />
-        <Carrousel />
-        <Separator />
-        <div className="h-80 text-center"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero eius, deserunt, quae voluptas aut laborum culpa nobis accusamus debitis corrupti natus nulla amet esse veniam nostrum voluptate! Consequatur, voluptas ducimus.</div>
-        <div className="h-80 text-center"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero eius, deserunt, quae voluptas aut laborum culpa nobis accusamus debitis corrupti natus nulla amet esse veniam nostrum voluptate! Consequatur, voluptas ducimus.</div>
-       <FloatingWhatsApp/>
+        <Routes>
+          <Route path="/" element={<Carrousel />} />
+          <Route path="/products" element={<ProductsView />} />
+          <Route path="/services" element={<ServicesView />} />
+          <Route path="/#aboutUs" element={<AboutUs />} />
+        </Routes>
+        <AboutUs />
+        <FloatingWhatsApp
+          phoneNumber="+5492235045492"
+          accountName="NeoCorp"
+          chatMessage="Hola,¿Cómo podemos ayudarte?"
+          statusMessage="Normalmente respondemos dentro de la hora"
+          placeholder="Escribe un mensaje"
+        />
         <Footer />
       </BrowserRouter>
 
