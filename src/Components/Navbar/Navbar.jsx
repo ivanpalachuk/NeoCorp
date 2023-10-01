@@ -103,7 +103,7 @@ const Navbar = () => {
                 {/*Menu del burger*/}
                 <div className="navbar-menu relative z-50 hidden">
                     <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-                    <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+                    <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-[#266f83] border-r overflow-y-auto">
                         <div className="flex items-center mb-8">
                             <Logo />
                             <button className="navbar-close">
@@ -115,16 +115,22 @@ const Navbar = () => {
                         <div>
                             <ul>
                                 <li className="mb-1">
-                                    <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Home</a>
+                                    <Link className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" to="/">Home</Link>
                                 </li>
                                 <li className="mb-1">
-                                    <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Sobre Nosotros</a>
+                                    <Link className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" to="/products">Productos</Link>
                                 </li>
                                 <li className="mb-1">
-                                    <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Servicios</a>
+                                    <Link className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" to="/">Sobre Nosotros</Link>
                                 </li>
                                 <li className="mb-1">
-                                    <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Productos</a>
+                                    <Link className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/services">Servicios</Link>
+                                </li>
+                                <li className="mb-1">
+                                    <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Cotizaciones</a>
+                                </li>
+                                <li className="mb-1">
+                                    <Link className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="https://www.instagram.com/neocorpsa/">Novedades</Link>
                                 </li>
                                 <li className="mb-1">
                                     <a className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Contacto</a>
