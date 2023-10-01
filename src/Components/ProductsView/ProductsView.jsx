@@ -1,5 +1,5 @@
 import ItemContainer from '../StyledComponents/ItemContainer.jsx'
-import Title from '../StyledComponents/Title.Jsx'
+import Title from '../StyledComponents/Title.jsx'
 
 
 const ProductsView = () => {
